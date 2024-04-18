@@ -1,5 +1,5 @@
 
-# The yolov7 object detection
+# The yolov5 hand recognition
 
 This is a sample ncnn android project, it depends on ncnn library and opencv
 
@@ -31,15 +31,9 @@ https://github.com/nihui/opencv-mobile
 * Most small models run slower on GPU than on CPU, this is common
 * FPS may be lower in dark environment because of longer camera exposure time
 
-## screenshot
-![](photo_2022-07-17_22-33-38.jpg)
 
 ## reference  
 
-https://github.com/WongKinYiu/yolov7
+https://github.com/nihui/ncnn-android-yolov5
 
-https://github.com/nihui/ncnn-android-nanodet
-
-https://github.com/Megvii-BaseDetection/YOLOX  
-
-## If this helped you, don't forget to Star 🌟 the repo.
+https://github.com/xiang-wuu/ncnn-android-yolov7
