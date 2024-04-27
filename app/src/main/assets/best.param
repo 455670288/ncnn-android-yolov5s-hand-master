@@ -171,7 +171,7 @@ Concat           /model.23/Concat         2 1 /model.23/m/m.0/cv2/act/Mul_output
 Convolution      /model.23/cv3/conv/Conv  1 1 /model.23/Concat_output_0 /model.23/cv3/conv/Conv_output_0 0=512 1=1 11=1 2=1 12=1 3=1 13=1 4=0 14=0 15=0 16=0 5=1 6=262144
 Swish            /model.23/cv3/act/Mul    1 1 /model.23/cv3/conv/Conv_output_0 /model.23/cv3/act/Mul_output_0
 Convolution      /model.24/m.0/Conv       1 1 /model.17/cv3/act/Mul_output_0_splitncnn_0 /model.24/m.0/Conv_output_0 0=72 1=1 11=1 2=1 12=1 3=1 13=1 4=0 14=0 15=0 16=0 5=1 6=9216
-Reshape          /model.24/Reshape        1 1 /model.24/m.0/Conv_output_0 /model.24/Reshape_output_0 0=1600 1=24 2=3
+Reshape          /model.24/Reshape        1 1 /model.24/m.0/Conv_output_0 /model.24/Reshape_output_0 0=-1 1=24 2=3
 Permute          /model.24/Transpose      1 1 /model.24/Reshape_output_0 /model.24/Transpose_output_0 0=1
 Sigmoid          /model.24/Sigmoid        1 1 /model.24/Transpose_output_0 /model.24/Sigmoid_output_0
 Slice            /model.24/Split          1 3 /model.24/Sigmoid_output_0 /model.24/Split_output_0 /model.24/Split_output_1 /model.24/Split_output_2 -23300=3,2,2,-233 1=3
@@ -184,7 +184,7 @@ BinaryOp         /model.24/Mul_3          2 1 /model.24/Pow_output_0 /model.24/C
 Concat           /model.24/Concat         3 1 /model.24/Mul_1_output_0 /model.24/Mul_3_output_0 /model.24/Split_output_2 /model.24/Concat_output_0 0=3
 Reshape          /model.24/Reshape_1      1 1 /model.24/Concat_output_0 /model.24/Reshape_1_output_0 0=24 1=4800
 Convolution      /model.24/m.1/Conv       1 1 /model.20/cv3/act/Mul_output_0_splitncnn_0 /model.24/m.1/Conv_output_0 0=72 1=1 11=1 2=1 12=1 3=1 13=1 4=0 14=0 15=0 16=0 5=1 6=18432
-Reshape          /model.24/Reshape_2      1 1 /model.24/m.1/Conv_output_0 /model.24/Reshape_2_output_0 0=400 1=24 2=3
+Reshape          /model.24/Reshape_2      1 1 /model.24/m.1/Conv_output_0 /model.24/Reshape_2_output_0 0=-1 1=24 2=3
 Permute          /model.24/Transpose_1    1 1 /model.24/Reshape_2_output_0 /model.24/Transpose_1_output_0 0=1
 Sigmoid          /model.24/Sigmoid_1      1 1 /model.24/Transpose_1_output_0 /model.24/Sigmoid_1_output_0
 Slice            /model.24/Split_1        1 3 /model.24/Sigmoid_1_output_0 /model.24/Split_1_output_0 /model.24/Split_1_output_1 /model.24/Split_1_output_2 -23300=3,2,2,-233 1=3
@@ -197,7 +197,7 @@ BinaryOp         /model.24/Mul_7          2 1 /model.24/Pow_1_output_0 /model.24
 Concat           /model.24/Concat_1       3 1 /model.24/Mul_5_output_0 /model.24/Mul_7_output_0 /model.24/Split_1_output_2 /model.24/Concat_1_output_0 0=3
 Reshape          /model.24/Reshape_3      1 1 /model.24/Concat_1_output_0 /model.24/Reshape_3_output_0 0=24 1=1200
 Convolution      /model.24/m.2/Conv       1 1 /model.23/cv3/act/Mul_output_0 /model.24/m.2/Conv_output_0 0=72 1=1 11=1 2=1 12=1 3=1 13=1 4=0 14=0 15=0 16=0 5=1 6=36864
-Reshape          /model.24/Reshape_4      1 1 /model.24/m.2/Conv_output_0 /model.24/Reshape_4_output_0 0=100 1=24 2=3
+Reshape          /model.24/Reshape_4      1 1 /model.24/m.2/Conv_output_0 /model.24/Reshape_4_output_0 0=-1 1=24 2=3
 Permute          /model.24/Transpose_2    1 1 /model.24/Reshape_4_output_0 /model.24/Transpose_2_output_0 0=1
 Sigmoid          /model.24/Sigmoid_2      1 1 /model.24/Transpose_2_output_0 /model.24/Sigmoid_2_output_0
 Slice            /model.24/Split_2        1 3 /model.24/Sigmoid_2_output_0 /model.24/Split_2_output_0 /model.24/Split_2_output_1 /model.24/Split_2_output_2 -23300=3,2,2,-233 1=3
