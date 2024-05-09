@@ -1,5 +1,5 @@
 
-# The yolov5 hand recognition
+# The yolov5s(7.0) hand recognition
 
 This is a sample ncnn android project, it depends on ncnn library and opencv
 
